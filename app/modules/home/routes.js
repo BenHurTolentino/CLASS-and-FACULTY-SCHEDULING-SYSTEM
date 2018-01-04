@@ -30,8 +30,9 @@ router.use(authMiddleware.hasAuth);
  * 
  * We're also importing controllers from the controller directory of this module.
  */
-var indexController = require('./controllers/index');
-router.get('/', indexController);
+router.get('/',(req,res)=>{
+    res.render('home/views/index');
+});
 
 /**
  * Here we just export said router on the 'index' property of this module.

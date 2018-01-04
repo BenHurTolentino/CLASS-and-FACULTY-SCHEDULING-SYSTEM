@@ -11,13 +11,13 @@ loginRouter.route('/')
     .post((req, res) => {
         var db = require('../../lib/database')();
 
-        db.query(`SELECT * FROM users WHERE email="${req.body.email}"`, (err, results, fields) => {
+        db.query(`SELECT * FROM tblaccounts WHERE strAccUsername="${req.body.username}"`, (err, results, fields) => {
             if (err) throw err;
             if (results.length === 0) return res.redirect('/login?incorrect');
 
             var user = results[0];
 
-            if (user.password !== req.body.password) return res.redirect('/login?incorrect');
+            if (user.strAccPassword !== req.body.password) return res.redirect('/login?incorrect');
 
             delete user.password;
 

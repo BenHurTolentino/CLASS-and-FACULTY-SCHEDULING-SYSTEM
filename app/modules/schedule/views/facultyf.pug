@@ -1,0 +1,16 @@
+extends ../../../templates/master.pug
+
+block content
+    div.ui.container
+        br
+        br
+        div.ui.centerer
+            div.ui.segment.ping.p-adjust
+                div.ui.container
+                div.ui.ribbon.label.inverted.blue
+                    label.ui Faculty Schedules
+                div.select.ui.simple.dropdown.item Faculties
+                        i.dropdown.icon
+                        div.ui.menu
+                            div.header Faculty List
+                                a.ui.item(href="/schedule/faculty/pick")

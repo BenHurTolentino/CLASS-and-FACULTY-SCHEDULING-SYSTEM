@@ -1,0 +1,26 @@
+extends ../../../templates/master.pug
+
+block content
+    br
+    br
+    div.ui.container
+        div.ui.segment.ping.p-adjust
+            div.ui.container
+            div.ui.ribbon.label.huge.inverted.blue 
+                p Employee Type
+                    i.configure.icon
+            a.button.green.right.floated.ui.basic.button.huge(href="/maintenance/Emp/new")
+                i.add.icon
+                |&nbsp; Add Employee Type
+            table.ui.padded.yellow.table   
+                th
+                    tr
+                        th.eleven.wide.tp.t-align Employee Type
+                        th.tp Actions  
+
+                    each emp in emps     
+                        tr
+                            td=emp.strEmpTypeDesc  
+                            td
+                                a(href=`/maintenance/Emp/${emp.strEmpTypeID}`): i.ui.green.address.edit.icon.large
+                                a(href=`/maintenance/Emp/${emp.strEmpTypeID}/remove`): i.ui.green.remove.icon.large

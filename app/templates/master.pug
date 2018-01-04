@@ -1,35 +1,31 @@
-//- This is the master template. Basically all the other pages will
-//- extend this. This btw, is a Pug comment. This will not appear
-//- in your browser when you render the HTML.
-
-//- See here that I modified this a bit so I can use the base
-//- template for the login page
 extends ./base
 
-block body
-    // I'm using Bulma's classes here.
-    // Refer to this: http://bulma.io/documentation/layout/container/
-    nav.navbar
-        div.navbar-brand
-            a.navbar-item(href="/") ExBPlate
-        
-        div.navbar-menu
-            div.navbar-start
-                div.navbar-item.has-dropdown.is-hoverable
-                    a.navbar-link(href="/admin") Admin
-                    div.navbar-dropdown.is-right
-                        a.navbar-item(href="/admin/users") Users
+block body    
+    div.ui.top.fixed.pointing.menu
+        div.right.menu
+            a.ui.item(href="/") Home
+            div.ui.simple.dropdown.item Schedule
+                i.dropdown.icon
+                div.menu
+                    div.header Type
+                    a.item(href="/schedule/class") Class Schedule
+                    a.item(href="/schedule/faculty") Faculty Schedule
+            div.ui.simple.dropdown.item Reports
+                i.dropdown.icon
+                div.menu
+                    div.header Type
+                    a.item(href="/reports/Schedule") Schedule
+                    a.item(href="/reports/DTR") DTR 
+            a.ui.item(href="/maintenance") Maintenance   
+                
 
-            div.navbar-end
-                div.navbar-item.has-dropdown.is-hoverable
-                    a.navbar-link: span.icon: i.fa.fa-user
-                    div.navbar-dropdown.is-right
-                        a.navbar-item(href="/settings") Settings
-                        a.navbar-item(href="/logout") Log-out
+        div.right.menu
+            a.menu.item(href="/logout")
+                i.sign.out.icon
+                p Log-out
+    block content
 
-    div.container
-        //- This part right here is the dynamic content. Once you extend
-        //- this template, you can place anything here.
+        div.ui.container
+
         
-        // This comment marks the dynamic content
-        block content
+        

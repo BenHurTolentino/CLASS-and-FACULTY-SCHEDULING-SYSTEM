@@ -1,0 +1,26 @@
+extends ../../../templates/master.pug
+
+block content
+    br
+    br
+    div.ui.container
+        div.ui.segment.ping.p-adjust
+            div.ui.container
+            div.ui.ribbon.label.huge.inverted.blue 
+                p Class
+                    i.configure.icon
+            a.button.green.right.floated.ui.basic.button.huge(href="/maintenance/Class/new")
+                i.add.icon
+                |&nbsp; Add Class
+            table.ui.padded.yellow.table   
+                th
+                    tr
+                        th.eleven.wide.tp.t-align Class
+                        th.tp Actions  
+
+                    each Class in Classes     
+                        tr
+                            td=Class.strClassName 
+                            td
+                                a(href=`/maintenance/Class/${Class.strClassID}`): i.ui.green.address.edit.icon.large
+                                a(href=`/maintenance/Class/${Class.strClassID}/remove`): i.ui.green.remove.icon.large

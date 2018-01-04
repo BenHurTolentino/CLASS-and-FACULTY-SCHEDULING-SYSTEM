@@ -1,0 +1,41 @@
+extends ../../../templates/master.pug
+
+block content
+    div.ui.container
+        br
+        br
+        div.ui.centerer
+            div.ui.segment.ping.p-adjust
+                div.ui.container
+                div.ui.ribbon.label.inverted.yellow
+                    label.ui Class Schedules
+                div.select.ui.simple.dropdown.item Classes
+                        i.dropdown.icon
+                        div.ui.menu
+                            div.header Class List
+                                a.ui.item(href="#")
+                a.button.green.right.floated.ui.basic.button(href='#')
+                    i.add.icon
+                    label Add Schedule
+                table.ui.compact.celled.table
+                    th
+                        tr
+                            th.tp.t-align Subject Code
+                            th.tp.t-align Subject Description
+                            th.tp.t-align Professor
+                            th.tp.t-align Room
+                            th.tp.t-align Schedule
+                            th.tp.t-align Actions
+                    th
+                        tr
+                            td
+                            td
+                            td
+                            td
+                            td
+                            td
+                                a(href="#")
+                                    i.green.edit.icon.large
+                                a(href="#")
+                                    i.green.remove.icon.large
+                                

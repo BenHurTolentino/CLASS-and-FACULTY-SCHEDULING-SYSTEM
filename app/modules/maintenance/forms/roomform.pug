@@ -1,0 +1,26 @@
+extends ../../../templates/master.pug
+
+block content
+    br
+    br
+    div.ui.container
+        div.ui.centerer
+            div.ui.segment.ping.p-adjust
+                div.ui.container
+                div.ui.ribbon.label.huge.inverted.blue 
+                    p #{Room ? 'Edit' : 'Add'} Room
+                .ui.container.inverted.teal.height3
+                    form#form.ui.form.mleft(method="POST" action=`/maintenance/Rooms${Room ? `/${Room.strRoomID}?_method=PUT`: '/new'}`)
+                        div.ui.field
+                            label.ui.large.teal.tag Room
+                            input(type="text" name="etname" value=Room ? Room.strRoomName : '')
+                        if(!Room)
+                            div.ui.field
+                                input(type="hidden" name="etid" value=ID)
+                        div#butt.warp2.height2
+                            button#add.ui.labeled.orange.icon.button.rightp(type="submit")
+                                i.add.icon
+                                p #{Room ? 'Update' : 'Add'}
+                            a.button.ui.labeled.orange.icon.button.rightp(href="/maintenance/Rooms")
+                                i.add.icon
+                                p Back

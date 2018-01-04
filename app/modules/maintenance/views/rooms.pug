@@ -1,0 +1,26 @@
+extends ../../../templates/master.pug
+
+block content
+    br
+    br
+    div.ui.container
+        div.ui.segment.ping.p-adjust
+            div.ui.container
+            div.ui.ribbon.label.huge.inverted.blue 
+                p Room
+                    i.configure.icon
+            a.button.green.right.floated.ui.basic.button.huge(href="/maintenance/Rooms/new")
+                i.add.icon
+                |&nbsp; Add Room
+            table.ui.padded.yellow.table   
+                th
+                    tr
+                        th.eleven.wide.tp.t-align Room
+                        th.tp Actions  
+
+                    each room in rooms     
+                        tr
+                            td=room.strRoomName 
+                            td
+                                a(href=`/maintenance/rooms/${room.strRoomID}`): i.ui.green.address.edit.icon.large
+                                a(href=`/maintenance/Rooms/${room.strRoomID}/remove`): i.ui.green.remove.icon.large

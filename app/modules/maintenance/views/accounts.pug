@@ -1,0 +1,24 @@
+extends ../../../templates/master.pug
+
+block content
+    br
+    br
+    div.ui.container
+        div.ui.segment.ping.p-adjust
+            div.ui.container
+            div.ui.ribbon.label.huge.inverted.blue 
+                p Accounts
+                    i.configure.icon
+            a.button.green.right.floated.ui.basic.button.huge(href="/maintenance/Accounts/new")
+                i.add.icon
+                |&nbsp; Add Account
+            table.ui.padded.yellow.table   
+                th
+                    tr
+                        th.eleven.wide.tp.t-align Account Username
+                        th.tp Actions          
+                    tr
+                        td
+                        td
+                            a(href=`#`): i.ui.green.address.edit.icon.large
+                            a(href=`#`): i.ui.green.remove.icon.large

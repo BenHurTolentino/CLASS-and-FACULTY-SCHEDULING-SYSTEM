@@ -1,0 +1,29 @@
+extends ../../../templates/master.pug
+
+block content
+    br
+    br
+    div.ui.container
+        div.ui.segment.ping.p-adjust
+            div.ui.container
+            div.ui.ribbon.label.huge.inverted.blue 
+                p Subjects
+                    i.configure.icon
+            a.button.green.right.floated.ui.basic.button.huge(href="/maintenance/Subjects/new")
+                i.add.icon
+                |&nbsp; Add Subjects
+            table.ui.padded.yellow.table   
+                th
+                    tr
+                        th.four.wide.tp.t-align Subject Code
+                        th.five.wide.tp.t-align Subject Description
+                        th.two.wide.tp.t-align units
+                        th.tp Actions          
+                    each subject in subjects
+                        tr
+                            td=subject.strSubjectID
+                            td=subject.strSubjectDesc
+                            td=subject.intSubjUnits
+                            td
+                                a(href=`/maintenance/Subjects/${subject.strSubjectID}`): i.ui.green.address.edit.icon.large
+                                a(href=`/maintenance/Subjects/${subject.strSubjectID}/remove`): i.ui.green.remove.icon.large

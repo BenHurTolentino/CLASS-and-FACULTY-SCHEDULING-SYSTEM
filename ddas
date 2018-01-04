@@ -1,0 +1,124 @@
+[33mcommit fa149afbdafac1ec42a93c498860aaa708a65837[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Ben Hur Tolentino <benbenten19@gmail.com>
+Date:   Thu Jan 4 13:29:09 2018 +0800
+
+    1/4/2018
+
+[33mcommit bff927041607d6b40d80b4aaad0c72fd2e877261[m
+Author: Ben Hur Tolentino <benbenten19@gmail.com>
+Date:   Wed Jan 3 14:45:52 2018 +0800
+
+    1/3/2018
+
+[33mcommit fedae3080bd43f379ae531f58460dc3b3853e7c6[m
+Author: Ben Hur Tolentino <benbenten19@gmail.com>
+Date:   Tue Jan 2 18:44:58 2018 +0800
+
+    1/2/2018
+
+[33mcommit 3acadd01e8df54def7d7f508d51bbbfc8576d2f5[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Micah Andrew F. Bule <micah.bule@gmail.com>
+Date:   Fri Aug 11 03:49:55 2017 +0800
+
+    Added Git and GitHub basics link
+
+[33mcommit 07cb8d76fc0e37b80490130afcdb2db2f28f09e9[m
+Merge: d9e2c9f 8ba8ae0
+Author: Micah Andrew F. Bule <micah.bule@gmail.com>
+Date:   Fri Aug 11 03:21:35 2017 +0800
+
+    Merge branch 'middlewares'
+
+[33mcommit 8ba8ae06000bead47f59dc576f1e1c7454b980b6[m[33m ([m[1;31morigin/middlewares[m[33m)[m
+Merge: d638be7 d9e2c9f
+Author: Micah Andrew F. Bule <micah.bule@gmail.com>
+Date:   Fri Aug 11 03:13:11 2017 +0800
+
+    Merge branch 'master' into middlewares
+
+[33mcommit d9e2c9f1899fb78591fff645fe684a4bbc12d216[m
+Author: Micah Andrew F. Bule <micah.bule@gmail.com>
+Date:   Fri Aug 11 03:09:40 2017 +0800
+
+    Added index route to .env file
+
+[33mcommit d638be75ce893751c320eb14e51b916b0d2cc04a[m
+Author: Micah Andrew F. Bule <micah.bule@gmail.com>
+Date:   Thu Aug 3 04:32:14 2017 +0800
+
+    Added simple authentication;
+    
+    Including authentication middlewares
+
+[33mcommit 336b0bd50ad8041503dd2bc459187df3cbd6e9df[m
+Author: Micah Andrew F. Bule <micah.bule@gmail.com>
+Date:   Thu Aug 3 02:31:53 2017 +0800
+
+    Added user module
+
+[33mcommit abba9f82dfaa6c59c189507b5ba5db8819744e88[m
+Author: Micah Andrew F. Bule <micah.bule@gmail.com>
+Date:   Wed Aug 2 12:49:53 2017 +0800
+
+    Added admin module
+    
+    Added user submodule;
+
+[33mcommit ecfcf9f2f6f50a8d6cce93ef2a87f7dbf9fbb03c[m
+Author: Micah Andrew F. Bule <micah.bule@gmail.com>
+Date:   Wed Aug 2 11:12:50 2017 +0800
+
+    Added controller directory for further modularization;
+    Added main index entry route in the .env config;
+    Added navbar;
+
+[33mcommit 7f8ae73d95437924716d66d80927ddf127f38b1b[m
+Author: Mico <mico@cynder.io>
+Date:   Wed Jul 19 19:02:54 2017 +0800
+
+    Fixed database library import
+
+[33mcommit 1599cf6d670442b9637756ff2d8fda2a68746cb4[m
+Author: Mico <mico@cynder.io>
+Date:   Wed Jul 19 18:33:42 2017 +0800
+
+    Updated the readme;
+    Added comments to the database library;
+
+[33mcommit c786b34a2a6de1d37d0233370e58398b29675745[m
+Author: Mico <mico@cynder.io>
+Date:   Wed Jul 19 18:02:25 2017 +0800
+
+    Added comments to the Pug files
+
+[33mcommit 5bf873519464da6d7d04edc5c147605f25dda6fb[m
+Author: Mico <mico@cynder.io>
+Date:   Wed Jul 19 17:46:34 2017 +0800
+
+    Added sample environment file
+
+[33mcommit c9e93167ef7808e732b10d8618bd9325f6fe0708[m
+Author: Mico <mico@cynder.io>
+Date:   Wed Jul 19 17:44:53 2017 +0800
+
+    Added database option;
+    Added assets;
+
+[33mcommit a074de947526dfe6898e87fe6385da171beb56bf[m
+Author: Mico <mico@cynder.io>
+Date:   Wed Jul 19 10:40:49 2017 +0800
+
+    Used express.Router();
+    Added comments;
+
+[33mcommit b4fb1d789644bcd19b59768714dedf2ce607c7ea[m
+Author: Mico <mico@cynder.io>
+Date:   Fri Jul 14 13:08:24 2017 +0800
+
+    Added readme
+
+[33mcommit c40b8560fc51389cd321d3313aee9468091e29a1[m
+Author: Mico <mico@cynder.io>
+Date:   Fri Jul 14 13:03:32 2017 +0800
+
+    Added initial files to the repo

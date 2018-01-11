@@ -22,7 +22,7 @@ var authMiddleware = require('../auth/middlewares/auth');
 /**
  * Use the middleware to check all routes registered for this router.
  */
-router.use(authMiddleware.hasAuth);
+//router.use(authMiddleware.hasAuth);
 
 /**
  * If you can notice, there's nothing new here except we're declaring the
